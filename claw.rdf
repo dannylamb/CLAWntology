@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+    <rdf:Description rdf:about="http://islandora.ca/claw/">
+      <dcterms:title xml:lang="en">Islandora CLAW Ontology</dcterms:title>
+      <dcterms:publisher rdf:resource="http://islandora.ca/"/>
+      <rdfs:seeAlso rdf:resource="https://github.com/Islandora-CLAW/claw_ontology/wiki"/>
+      <rdfs:comment xml:lang="en">PCDM refinements for Islandora CLAW.</rdfs:comment>
+      <owl:versionInfo>2017/04/04</owl:versionInfo>
+    </rdf:Description>
+
+    <rdf:Property rdf:about="http://islandora.ca/claw/hasPreservationMaster">
+      <rdfs:label xml:lang="en">has preservation master</rdfs:label>
+      <rdfs:comment xml:lang="en">Links to a preservation master File contained by this Object.</rdfs:comment>
+      <rdfs:domain rdf:resource="http://pcdm.org/models#Object"/>
+      <rdfs:range rdf:resource="http://pcdm.org/use#PreservationMasterFile"/>
+      <rdfs:subPropertyOf rdf:resource="http://pcdm.org/models#hasFile"/>
+      <rdfs:isDefinedBy rdf:resource="http://islandora.ca/claw#"/>
+    </rdf:Property>
+
+</rdf:RDF>
